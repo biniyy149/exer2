@@ -1,0 +1,11 @@
+let prompt = require('prompt-sync')();
+let numOfStudents = prompt('Eneter number of students: ');
+numOfStudents = parseInt(numOfStudents);
+let numOfTeams = prompt('enter number of teams: ');
+numOfTeams = parseInt(numOfTeams);
+let rem = numOfStudents%numOfTeams;
+let members = (Math.floor(numOfStudents/numOfTeams))+1;
+let teams = numOfTeams-rem;
+let quotient = Math.floor(numOfStudents/numOfTeams);
+console.log(rem,'teams', 'with',members,'members','and');
+console.log(teams,'teams','with',quotient,'members');
